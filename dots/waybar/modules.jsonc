@@ -1,73 +1,92 @@
 {
-	"hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "all-outputs": true,
-        "format-icons": {
-        "default": "󰫣 ",
-        "active": "󰫢 "
-		}
-	},
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "default": "󰫣 ",
+      "active": "󰫢 "
+    }
+  },
+  "clock": {
+    "format": "{:%H %M   }",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ffcc66'><b><u>{}</u></b></span>"
+      }
+    }
+  },
 
-	"clock": {
-		"format": "{:%H %M   }",
-		"tooltip-format": "<tt><small>{calendar}</small></tt>",
-		"calendar": {
-			"format": {
-				"months": "<span color='#ffead3'><b>{}</b></span>",
-				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-				"today": "<span color='#ffcc66'><b><u>{}</u></b></span>"
-			}
-		}
-	},
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " ",
+    "format-icons": [
+      "",
+      " ",
+      " "
+    ],
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+  },
 
 	"battery": {
-		"states": {
-			"good": 95,
-			"warning": 30,
-			"critical": 20
-		},
-		"format": "{icon}   {capacity}",
-		//"format-charging": "   {capacity}",
-        //"format-plugged": "    {capacity}",
-        "format-charging": "󰋠   {capacity}",
-		"format-plugged": "󰋠    {capacity}",
-		"format-alt": "{time}   {icon}",
-        "format-icons": ["󱢠 󱢠 󱢠 ", "󰛞 󱢠 󱢠 ", "󰛞 󱢠 󱢠 ", "󰋑 󱢠 󱢠 ", "󰋑 󰛞 󱢠 ", "󰋑 󰛞 󱢠 ", "󰋑 󰋑 󱢠 ", "󰋑 󰋑 󰛞 ","󰋑 󰋑 󰛞 " , "󰋑 󰋑 󰋑 "]
-		//"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-		//"format-icons": [" ", " ", " ", " ", " "]
-	},
-
-	"network": {
-		"format-wifi": "    {signalStrength}%",
-		"format-ethernet": "󰈁",
-		"format-linked": "{ifname} (No IP)",
-		"format-disconnected": "󰖪 ",
-        "on-click": "exec ~/.config/rofi/assets/wifimenu --rofi -s",
-        "tooltip-format":"Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>"	
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
     },
-
-	"bluetooth": {
-		"format": "󰂯    {status}",
-		"format-disabled": " off",
-		"format-connected": " {num_connections}",
-		"tooltip-format": "{device_alias}",
-		"tooltip-format-connected": " {device_enumerate}",
-		"tooltip-format-enumerate-connected": "{device_alias}",
-		"on-click": "kitty -e bluetui"
-	},
-
-    "group/custom-group": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 500,
-            "transition-left-to-right": false
-        },
-        "modules": [
-            "battery",
-            "bluetooth",
-            "network"
-        ]
-    }
+    "format": "{icon}   {capacity}",
+    //"format-charging": "   {capacity}",
+    //"format-plugged": "    {capacity}",
+    "format-charging": "󰋠   {capacity}",
+    "format-plugged": "󰋠    {capacity}",
+    "format-alt": "{time}   {icon}",
+    "format-icons": [
+      "󱢠 󱢠 󱢠 ",
+      "󰛞 󱢠 󱢠 ",
+      "󰛞 󱢠 󱢠 ",
+      "󰋑 󱢠 󱢠 ",
+      "󰋑 󰛞 󱢠 ",
+      "󰋑 󰛞 󱢠 ",
+      "󰋑 󰋑 󱢠 ",
+      "󰋑 󰋑 󰛞 ",
+      "󰋑 󰋑 󰛞 ",
+      "󰋑 󰋑 󰋑 "
+    ]
+    //"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    //"format-icons": [" ", " ", " ", " ", " "]
+  },
+  "network": {
+    "format-wifi": "    {signalStrength}%",
+    "format-ethernet": "󰈁",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "󰖪 ",
+    "on-click": "exec ~/.config/rofi/assets/wifimenu --rofi -s",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({bandwidthDownBytes})</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>"
+  },
+  "bluetooth": {
+    "format": "󰂯    {status}",
+    "format-disabled": " off",
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{device_alias}",
+    "tooltip-format-connected": " {device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "kitty -e bluetui"
+  },
+  "group/custom-group": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "battery",
+      "bluetooth",
+      "network"
+    ]
+  }
 }
-

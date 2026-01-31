@@ -76,6 +76,7 @@ tooltip label {
 
 #window,
 #clock,
+#pulseaudio,
 #battery,
 #network,
 #memory,
@@ -111,6 +112,12 @@ tooltip label {
     color: lighter(@main-color);
     background: transparent;
 }
+
+#pulseaudio {
+    color: lighter(@main-color);
+    background: transparent;
+}
+
 
 #memory {
     color: lighter(@main-color);
