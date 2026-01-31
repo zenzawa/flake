@@ -155,6 +155,12 @@
     windowrule {
       name = windowrule-24
       opacity = 1.0 override 0.85 override
+      match:class = antigravity
+    }
+
+    windowrule {
+      name = windowrule-25
+      opacity = 1.0 override 0.85 override
       match:class = .virt-manager-wrapped
     }
 

@@ -17,6 +17,7 @@
     libsForQt5.qt5.qtsvg
     kdePackages.qt5compat
     cpuid
+    playerctl
   ];
 
   vulkan = with pkgs; [

@@ -30,4 +30,9 @@
       notification-body-image-width = 200;
     };
   };
+
+  services.swayosd = {
+    enable = true;
+    topMargin = 0.9;
+  };
 }
