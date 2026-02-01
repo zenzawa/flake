@@ -1,38 +1,74 @@
-{...}: {
+{userpath, ...}: {
   services.swaync = {
     enable = true;
 
-    style = ''
-      .notification {
-        padding: 10px;
-        border-radius: 10px;
-        background: rgba(32, 23, 23, 0.75);
-        border: 4px solid #8d7091;
-        color: #d7d7d5;
-      }
-    '';
+    style = "${userpath}/flake/dots/swaync/style.css";
 
     settings = {
       positionX = "right";
       positionY = "top";
-      layer = "overlay";
-      control-center-layer = "top";
-      layer-shell = true;
       cssPriority = "application";
-      control-center-margin-top = 0;
-      control-center-margin-bottom = 0;
-      control-center-margin-right = 0;
+      layer = "overlay";
+      layer-shell = true;
+
+      control-center-layer = "top";
+      control-center-width = 330;
+      control-center-height = 725;
+      control-center-margin-top = 2;
+      control-center-margin-bottom = 2;
+      control-center-margin-right = 1;
       control-center-margin-left = 0;
-      notification-2fa-action = true;
-      notification-inline-replies = false;
-      notification-icon-size = 64;
+
+      notification-window-width = 400;
+      notification-window-height = 200;
+      notification-icon-size = 50;
       notification-body-image-height = 100;
       notification-body-image-width = 200;
+      notification-2fa-action = true;
+      notifications-inline-replies = true;
+
+      timeout = 4;
+      timeout-low = 4;
+      timeout-critical = 4;
+
+      fit-to-screen = false;
+      relative-timestamps = true;
+      keyboard-shortcuts = true;
+      image-visibility = "when-available";
+      transition-time = 200;
+      hide-on-clear = false;
+      hide-on-action = true;
+      script-fail-notify = true;
+      widgets = [
+        "mpris"
+        "title"
+        "dnd"
+        "notifications"
+      ];
+
+      widget-config = {
+        title = {
+          text = "NOTIFICATIONS";
+          clear-all-button = true;
+          button-text = "󰩺  CLEAR";
+        };
+
+        dnd = {
+          text = "FUCK OFF";
+        };
+
+        mpris = {
+          image-size = 76;
+          image-radius = 10;
+        };
+      };
     };
   };
 
   services.swayosd = {
     enable = true;
     topMargin = 0.9;
+
+    stylePath = "${userpath}/flake/dots/swayosd.css";
   };
 }

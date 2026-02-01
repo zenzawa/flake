@@ -64,7 +64,7 @@
               };
 
               username = "zenzawa";
-              userpath = "/home/zenzawa/";
+              userpath = "/home/zenzawa";
 
               inherit inputs;
             };

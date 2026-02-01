@@ -69,11 +69,12 @@
     yaak
     nasm
     nodejs
+    python3
     pnpm
     deno
     rustup
     jq # json processor
-    vscode
+    antigravity-fhs
     octaveFull
   ];
 

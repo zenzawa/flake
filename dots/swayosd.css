@@ -1,0 +1,99 @@
+/* ----------------------------------------------------------------------------
+   Nothing-inspired dot-matrix style for SwayOSD
+   Dark + subtle grid + glyph-like feel
+   ------------------------------------------------------------------------- */
+
+@define-color bg #0f0f0f;
+@define-color fg #f0f0f0;
+@define-color accent #ffffff;
+@define-color subtle #444444;
+@define-color glow rgba(255, 255, 255, 0.08);
+
+window#osd {
+  background-color: @bg;
+  color: @fg;
+  font-family: "JetBrains Mono", "IBM Plex Mono", "Courier New", monospace;
+  font-size: 14px;
+  /* slightly smaller for "dot" feel */
+  letter-spacing: 0.5px;
+  /* helps mimic dot-matrix spacing */
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 1px solid @subtle;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px @glow;
+  /* very subtle inner glow */
+  margin: 32px;
+  background-image: radial-gradient(circle at 1px 1px,
+      @subtle 1px,
+      transparent 1px);
+  background-size: 24px 24px;
+  /* fake dot-matrix grid */
+  background-position: center;
+}
+
+/* Main label (volume %, brightness %, etc.) */
+label {
+  color: @accent;
+  font-weight: 500;
+  font-size: 2.4em;
+  /* big number feels glyph-like */
+  letter-spacing: 1.2px;
+  margin: 0 8px;
+}
+
+/* Progress bar container */
+trough {
+  background-color: #1a1a1a;
+  border-radius: 999px;
+  min-height: 8px;
+  margin: 10px 0;
+}
+
+/* Filled progress part */
+highlight {
+  background-color: @accent;
+  border-radius: 999px;
+}
+
+/* Make progress look more "segmented / dotty" */
+highlight {
+  background-image: linear-gradient(to right,
+      @accent 0%,
+      @accent 48%,
+      transparent 48%,
+      transparent 52%,
+      @accent 52%,
+      @accent 100%);
+  background-size: 28px 100%;
+}
+
+/* Icon (volume, brightness, caps lock, etc.) */
+image {
+  -gtk-icon-size: 64px;
+  /* quite large – Nothing loves big icons */
+  margin: 0 16px 0 0;
+  color: @accent;
+  opacity: 0.9;
+}
+
+/* Level text (e.g. "68%") next to progress */
+level {
+  color: @fg;
+  font-size: 1.1em;
+  letter-spacing: 0.8px;
+  min-width: 48px;
+  text-align: right;
+}
+
+/* For Caps Lock / other indicator text */
+.level-text {
+  font-size: 1.4em;
+  color: @accent;
+}
+
+/* Make everything feel a bit more "retro dot" */
+*:disabled {
+  opacity: 0.6;
+}
