@@ -41,6 +41,7 @@
     sourceHighlight
     openssl
     protonvpn-gui
+    lsof
   ];
 
   apps = with pkgs; [

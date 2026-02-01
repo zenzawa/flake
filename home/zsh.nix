@@ -23,93 +23,99 @@
     };
 
     initContent = ''
-            fastfetch
+                    fastfetch
 
-      # LESS SYNTAX HIGHLIGHT
-            export LESSOPEN="| ${pkgs.sourceHighlight}/bin/src-hilities-lesspipe.sh %s"
-            export LESS=" -R "
+              # LESS SYNTAX HIGHLIGHT
+                    export LESSOPEN="| ${pkgs.sourceHighlight}/bin/src-hilities-lesspipe.sh %s"
+                    export LESS=" -R "
 
-      # Enable Powerlevel10k instant prompt
-            if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
-              source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
-                fi
+              # Enable Powerlevel10k instant prompt
+                    if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+                      source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+                        fi
 
-      # source the theme
-                source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+              # source the theme
+                        source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
 
-      # add ssh key from ~/.key gor github
-            #    if [ -z "$SSH_AUTH_SOCK" ]; then
-            #      eval "$(ssh-agent -s)"
-            #        ssh-add ~/zenkey # or id_rsa if you use RSA keys
-            #        fi
+              # add ssh key from ~/.key gor github
+                    #    if [ -z "$SSH_AUTH_SOCK" ]; then
+                    #      eval "$(ssh-agent -s)"
+                    #        ssh-add ~/zenkey # or id_rsa if you use RSA keys
+                    #        fi
 
-      # to customize prompt, run `p10k configure` or edit ~/.p10k.zsh
-                    [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+              # to customize prompt, run `p10k configure` or edit ~/.p10k.zsh
+                            [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-      # highlight man using nvim
-                    vman() { nvim <(man $1); }
+              # highlight man using nvim
+                            vman() { nvim <(man $1); }
 
-          wifer() {
-            systemctl suspend
-              ~/bits-login/login.sh
-              sudo warp-svc
-              warp-cli connect
-          }
+                  wifer() {
+                    systemctl suspend
+                      ~/bits-login/login.sh
+                      sudo warp-svc
+                      warp-cli connect
+                  }
 
-          cleaner() {
-            sudo nix profile wipe-history  --profile /nix/var/nix/profiles/system
-              sudo nix-collect-garbage --delete-old
-              nix-collect-garbage --delete-old
-              nix store gc
-              sudo nix store optimise
-          }
+                  cleaner() {
+                    sudo nix profile wipe-history  --profile /nix/var/nix/profiles/system
+                      sudo nix-collect-garbage --delete-old
+                      nix-collect-garbage --delete-old
+                      nix store gc
+                      sudo nix store optimise
+                  }
 
-          rebuild() {
-            sudo mount /dev/nvme0n1p4 /boot
-              sudo nixos-rebuild switch --flake ~/flake#senzawa --impure
-          }
+                  rebuild() {
+                    sudo mount /dev/nvme0n1p4 /boot
+                      sudo nixos-rebuild switch --flake ~/flake#senzawa --impure
+                  }
 
-          ff() {
-            local file
-              file=$(fzf --query="$1") || return
-              cd "$(dirname "$file")" || return
-          }
+                  ff() {
+                    local file
+                      file=$(fzf --query="$1") || return
+                      cd "$(dirname "$file")" || return
+                  }
 
-          fd() {
-            cd ~
-            local dir
-            dir="$(find . -type d 2>/dev/null | fzf)"
-            [ -n "$dir" ] && cd "$dir"
-          }
+                  fd() {
+                    cd ~
+                    local dir
+                    dir="$(find . -type d 2>/dev/null | fzf)"
+                    [ -n "$dir" ] && cd "$dir"
+                  }
 
 
-          fvim() {
-            local file
-              file=$(fzf --query="$1") || return
-              nvim "$file" || return
-          }
+                  fvim() {
+                    local file
+                      file=$(fzf --query="$1") || return
+                      nvim "$file" || return
+                  }
 
-          standwal() {
-            cd
-              mkdir .flakewal
-              wal -i ~/flake/assets/wallpapers/bakane.jpg
-              rsync -a ~/.cache/wal/ ~/.flakewal
-              wal -i ~/flake/assets/wallpapers/fireflychi.png
-          }
+                  standwal() {
+                    cd
+                      mkdir .flakewal
+                      wal -i ~/flake/assets/wallpapers/bakane.jpg
+                      rsync -a ~/.cache/wal/ ~/.flakewal
+                      wal -i ~/flake/assets/wallpapers/fireflychi.png
+                  }
 
-          waller() {
-            cd
-              mkdir .flakewal
-              wal -i ~/flake/assets/wallpapers/bakane.jpg
-              rsync -a ~/.cache/wal/ ~/.flakewal
-              wal -i "$1"
-          }
+                  waller() {
+                    cd
+                      mkdir .flakewal
+                      wal -i ~/flake/assets/wallpapers/bakane.jpg
+                      rsync -a ~/.cache/wal/ ~/.flakewal
+                      wal -i "$1"
+                  }
 
-          compdef _waller waller
+                  compdef _waller waller
 
-            _waller() {
-              _files
-            }
+                    _waller() {
+                      _files
+                    }
+
+
+      killport () {
+        local port=$1
+        kill -9 $(lsof -t -i :$port)
+      }
 
 
     '';
