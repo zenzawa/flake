@@ -1,68 +1,13 @@
 {userpath, ...}: {
+  home.file."config/swaync/config.json".source = ../dots/swaync/config.json;
+  home.file."config/swaync/style.css".source = ../dots/swaync/style.css;
+  home.file."config/swaync/style" = {
+    source = ../dots/swaync/style;
+    recursive = true;
+  };
+
   services.swaync = {
     enable = true;
-
-    style = "${userpath}/flake/dots/swaync/style.css";
-
-    settings = {
-      positionX = "right";
-      positionY = "top";
-      cssPriority = "application";
-      layer = "overlay";
-      layer-shell = true;
-
-      control-center-layer = "top";
-      control-center-width = 330;
-      control-center-height = 725;
-      control-center-margin-top = 2;
-      control-center-margin-bottom = 2;
-      control-center-margin-right = 1;
-      control-center-margin-left = 0;
-
-      notification-window-width = 400;
-      notification-window-height = 200;
-      notification-icon-size = 50;
-      notification-body-image-height = 100;
-      notification-body-image-width = 200;
-      notification-2fa-action = true;
-      notifications-inline-replies = true;
-
-      timeout = 4;
-      timeout-low = 4;
-      timeout-critical = 4;
-
-      fit-to-screen = false;
-      relative-timestamps = true;
-      keyboard-shortcuts = true;
-      image-visibility = "when-available";
-      transition-time = 200;
-      hide-on-clear = false;
-      hide-on-action = true;
-      script-fail-notify = true;
-      widgets = [
-        "mpris"
-        "title"
-        "dnd"
-        "notifications"
-      ];
-
-      widget-config = {
-        title = {
-          text = "NOTIFICATIONS";
-          clear-all-button = true;
-          button-text = "󰩺  CLEAR";
-        };
-
-        dnd = {
-          text = "FUCK OFF";
-        };
-
-        mpris = {
-          image-size = 76;
-          image-radius = 10;
-        };
-      };
-    };
   };
 
   services.swayosd = {

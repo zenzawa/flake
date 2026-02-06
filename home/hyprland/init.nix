@@ -39,7 +39,7 @@
       "hypridle"
       "nm-applet"
       "swaync"
-      "swayosd-server"
+      "swayosd --startup"
       # "easyeffects --gapplication-service"
        "swww-daemon"
        "swww img ~/flake/assets/wallpapers/saku.png"
