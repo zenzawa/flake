@@ -61,6 +61,7 @@
     vesktop
     upscayl
     hyprshot
+    openutau
   ];
 
   dev = with pkgs; [
