@@ -1,13 +1,22 @@
+# Video & audio player using Celluloid
 [opener]
 play = [
-  {run = 'vlc "$@"', desc = "VLC", orphan = true},
+    # Main option: open in Celluloid (non-blocking)
+    { run = 'celluloid "$@"', orphan = false, for = "unix", desc = "Celluloid" },
+
+    # Fallback: use xdg-open (usually opens your default video player)
+    { run = 'xdg-open "$@"',  desc = "System default", for = "unix" },
 ]
 
 [open]
 rules = [
-  # Video files → use the "play" opener (which now runs VLC)
-  { mime = "video/*", use = ["play", "reveal"] },
+    # ── Video files ───────────────────────────────────────────────
+    { mime = "video/*", use = "play" },
 
-  # Audio files (including FLAC) → same "play" opener
-  { mime = "audio/*",   use = ["play", "reveal"] },
+    # ── Audio files ───────────────────────────────────────────────
+    { mime = "audio/*", use = "play" },
+
+    # Optional: also catch some common containers as audio/video
+    { name = "*.{mkv,mp4,webm,avi,mov,flv,wmv,mpg,mpeg}", use = "play" },
+    { name = "*.{mp3,flac,wav,ogg,m4a,aac,opus,wma}",      use = "play" },
 ]
