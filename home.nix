@@ -5,6 +5,7 @@
 }: {
   imports = [
     inputs.zen-browser.homeModules.twilight
+    inputs.seanime.nixosModules.seanime
     ./home/neovim/init.nix
     ./home/hyprland/init.nix
     ./home/i3/init.nix
@@ -22,6 +23,8 @@
     ./home/launcher.nix
     ./home/zellij.nix
   ];
+
+  modules.home.services.seanime.enable = true;
 
   home.username = username;
   home.homeDirectory = ''/home/${username}'';
