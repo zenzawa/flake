@@ -59,6 +59,7 @@
     qbittorrent
     qalculate-gtk
     vesktop
+    discord
     upscayl
     hyprshot
     openutau
