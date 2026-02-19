@@ -159,14 +159,14 @@
     }
 
     windowrule {
-      name = windowrule-24
+      name = windowrule-25
       opacity = 1.0 override 0.85 override
       match:class = discord
     }
 
 
     windowrule {
-      name = windowrule-25
+      name = windowrule-26
       opacity = 1.0 override 0.85 override
       match:class = .virt-manager-wrapped
     }

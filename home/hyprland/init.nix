@@ -38,7 +38,7 @@
       "waybar"
       "hypridle"
       "nm-applet"
-      "swaync"
+      # "swaync"
       "swayosd --startup"
       # "easyeffects --gapplication-service"
        "swww-daemon"
