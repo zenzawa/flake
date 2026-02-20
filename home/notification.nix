@@ -8,9 +8,9 @@
 
   home.file.".config/swayosd/style.css".source = ../dots/swayosd.css;
 
-  # services.swaync = {
-  #   enable = true;
-  # };
+  services.swaync = {
+    enable = true;
+  };
 
   services.swayosd = {
     enable = true;
