@@ -26,7 +26,7 @@
       "$mod, L, exec, pkill waybar || waybar"
       "$mod, T, fullscreen, 1"
       "$mod, Y, fullscreen, 0"
-      "$mod, S, exec, hyprshot -m output"
+      "$shiftMod, S, exec, hyprshot -m output"
 
       # move windows
       "$shiftMod, H, movewindow, l"
