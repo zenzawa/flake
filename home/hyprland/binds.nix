@@ -11,7 +11,7 @@
       "$mod, V, togglefloating"
       "$mod, F, exec, $menu"
       "$mod, P, pseudo" # dwindle
-      "$mod, Space, togglesplit"
+      "$mod, Space, layoutmsg, togglesplit"
       "$mod, B, exec, $browser"
       "$mod, N, exec, $nbrowser"
       "$mod, C, exec, ~/.config/rofi/assets/wifimenu --rofi -s"
