@@ -40,7 +40,7 @@
     mpvpaper
     sourceHighlight
     openssl
-    protonvpn-gui
+    proton-vpn
     lsof
   ];
 

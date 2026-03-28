@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   programs.nixvim.plugins.lsp = {
     enable = true;
     inlayHints = true;
@@ -22,8 +19,8 @@
       cssls.enable = true;
       tailwindcss.enable = true;
       jsonls.enable = true;
-      ts_ls.enable = true;
-      # denols.enable = true;
+      # ts_ls.enable = true;
+      denols.enable = true;
     };
 
     keymaps = {
@@ -56,5 +53,5 @@
     };
   };
 
-  programs.nixvim.plugins.rustaceanvim.enable = true; 
+  programs.nixvim.plugins.rustaceanvim.enable = true;
 }
