@@ -24,7 +24,7 @@
       "$shiftMod, S, resizeactive, 0 100" # down
       "$shiftMod, W, resizeactive, 0 -100" # up
       "$mod, L, exec, pkill waybar || waybar"
-      "$mod, N, exec, pkill wlsunset || wlsunset -t 4500 -T 8000 -S 00:00"
+      "$mod, N, exec, pkill wlsunset || wlsunset -t 3500 -T 8000 -S 00:00"
       "$mod, T, fullscreen, 1"
       "$mod, Y, fullscreen, 0"
       "$shiftMod, S, exec, hyprshot -m output"
