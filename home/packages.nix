@@ -42,6 +42,7 @@
     openssl
     proton-vpn
     lsof
+    wlsunset
   ];
 
   apps = with pkgs; [

@@ -13,7 +13,7 @@
       "$mod, P, pseudo" # dwindle
       "$mod, Space, layoutmsg, togglesplit"
       "$mod, B, exec, $browser"
-      "$mod, N, exec, $nbrowser"
+      "$mod, G, exec, $nbrowser"
       "$mod, C, exec, ~/.config/rofi/assets/wifimenu --rofi -s"
       "$shiftMod, right, resizeactive, 100 0" # right
       "$shiftMod, left, resizeactive, -100 0" # left
@@ -24,6 +24,7 @@
       "$shiftMod, S, resizeactive, 0 100" # down
       "$shiftMod, W, resizeactive, 0 -100" # up
       "$mod, L, exec, pkill waybar || waybar"
+      "$mod, N, exec, pkill wlsunset || wlsunset -t 4500 -T 8000 -S 00:00"
       "$mod, T, fullscreen, 1"
       "$mod, Y, fullscreen, 0"
       "$shiftMod, S, exec, hyprshot -m output"
