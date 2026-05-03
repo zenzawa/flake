@@ -27,7 +27,7 @@
       "$mod, N, exec, pkill wlsunset || wlsunset -t 3500 -T 8000 -S 00:00"
       "$mod, T, fullscreen, 1"
       "$mod, Y, fullscreen, 0"
-      "$shiftMod, S, exec, hyprshot -m output"
+      "$mod, S, exec, hyprshot -m output"
 
       # move windows
       "$shiftMod, H, movewindow, l"
