@@ -19,7 +19,6 @@
     };
 
     stylix.url = "github:danth/stylix";
-    seanime.url = "github:rishabh5321/seanime-flake";
   };
 
   outputs = inputs @ {
