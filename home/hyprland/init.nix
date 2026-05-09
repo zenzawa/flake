@@ -41,8 +41,8 @@
       "swaync"
       "swayosd --startup"
       # "easyeffects --gapplication-service"
-      "swww-daemon"
-      "swww img ~/flake/assets/wallpapers/saku.png"
+      "awww-daemon"
+      "awww img ~/flake/assets/wallpapers/saku.png"
       # ''nvidia-offload mpvpaper -o "no-audio --panscan=1.0 --loop" ALL ~/flake/assets/wallpapers/biboo.mp4''
       "fcitx5"
     ];

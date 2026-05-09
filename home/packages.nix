@@ -10,7 +10,7 @@
     qt6.qtwayland
     clang
     networkmanagerapplet
-    swww
+    awww
     pywal
     file
     tree
