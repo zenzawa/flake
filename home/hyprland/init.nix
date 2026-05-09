@@ -48,8 +48,8 @@
     ];
 
     settings."$terminal" = "kitty";
-    settings."$browser" = "zen-twilight || zen";
-    settings."$nbrowser" = "nvidia-offload zen-twilight || zen-twilight || zen";
+    settings."$browser" = "zen || zen-beta || zen-twilight";
+    settings."$nbrowser" = "nvidia-offload zen || zen-beta || zen-twilight";
     settings."$fileManager" = "nautilus";
     settings."$menu" = "rofi -show drun";
     settings."$clip" = "~/flake/dots/fuzzel/clipboard-fuzzel.sh";
