@@ -23,7 +23,7 @@
     powerManagement.enable = true;
     powerManagement.finegrained = true;
 
-    open = false; # disable the new nvidia open source drivers
+    open = true; # disable the new nvidia open source drivers
 
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.beta;
