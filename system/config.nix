@@ -14,7 +14,7 @@
     ./packages.nix
     ./programs.nix
     ./power.nix
-    ./sddm.nix
+    ./displayManager.nix
     ./stylix.nix
     ./ssh.nix
     ./systemd.nix
