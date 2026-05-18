@@ -3,5 +3,5 @@
     enable = true;
   };
 
-  home.file.".config/waybar".source = ../../dots/waybar;
+  home.file.".config/waybar".source = ../dots/waybar;
 }

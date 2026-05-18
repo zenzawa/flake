@@ -10,6 +10,7 @@
     ./devices.nix
     ./environment.nix
     ./graphics.nix
+    ./hyprland.nix
     ./networking.nix
     ./packages.nix
     ./programs.nix
