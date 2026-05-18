@@ -56,7 +56,6 @@
     anki-bin
     brave
     telegram-desktop
-    qbittorrent
     qalculate-gtk
     vesktop
     discord
@@ -100,6 +99,7 @@
 
   stable = with pkgs-stable; [
     kew
+    qbittorrent
   ];
 in {
   home.packages = systemPackages ++ utils ++ apps ++ dev ++ i3 ++ stable;
