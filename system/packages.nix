@@ -17,6 +17,7 @@
     kdePackages.qt5compat
     cpuid
     playerctl
+    xorg.xinit
   ];
 
   vulkan = with pkgs; [
