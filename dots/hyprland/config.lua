@@ -38,14 +38,6 @@ hl.config({
     },
   },
 
-  dwindle = {
-    preserve_split = true,
-  },
-
-  master = {
-    new_status = "master",
-  },
-
   misc = {
     disable_hyprland_logo = true,
     force_default_wallpaper = -1,
