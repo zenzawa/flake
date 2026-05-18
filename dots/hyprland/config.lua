@@ -6,6 +6,16 @@ hl.config({
     gaps_out = 6,
     layout = "dwindle",
     resize_on_border = true,
+    col = {
+      active_border = {
+        colors = {
+          "rgba(8D7091B3)",
+          "rgb(0, 0, 0)",
+        },
+        angle = 208,
+      },
+      inactive_border = "rgba(59595900)",
+    },
   },
 
   decoration = {
@@ -36,6 +46,10 @@ hl.config({
     touchpad = {
       natural_scroll = true,
     },
+  },
+
+  dwindle = {
+    preserve_split = true,
   },
 
   misc = {
