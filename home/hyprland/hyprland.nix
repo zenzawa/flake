@@ -8,9 +8,9 @@
   home.file.".config/hypr/binds.lua".source = ../../dots/hyprland/binds.lua;
   home.file.".config/hypr/windowrules.lua".source = ../../dots/hyprland/windowrules.lua;
 
-    imports = [
-    ./hypridle.nix
+  home.file.".config/hypr/hypridle.conf".source = ../../dots/hyprland/hypridle.conf;
+
+  imports = [
     ./hyprlock.nix
   ];
-
 }

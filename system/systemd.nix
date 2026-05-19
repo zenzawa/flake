@@ -1,5 +1,9 @@
 {...}: {
-  #  systemd.extraConfig = ''
-  #    DefaultTimeoutStopSec=10s
-  #  '';
+  services.logind = {
+    settings.Login = {
+        HandleLidSwitch = "suspend";
+        HandleLidSwitchExternalPower = "suspend";
+        HandleLidSwitchDocked = "ignore";
+      };
+  };
 }

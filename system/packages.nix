@@ -18,6 +18,7 @@
     cpuid
     playerctl
     xinit
+    hypridle
   ];
 
   vulkan = with pkgs; [
