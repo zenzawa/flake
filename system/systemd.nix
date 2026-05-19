@@ -1,9 +1,9 @@
 {...}: {
-  services.logind = {
-    settings.Login = {
-        HandleLidSwitch = "suspend";
-        HandleLidSwitchExternalPower = "suspend";
-        HandleLidSwitchDocked = "ignore";
-      };
-  };
+  # services.logind = {
+  #   settings.Login = {
+  #       HandleLidSwitch = "suspend";
+  #       HandleLidSwitchExternalPower = "suspend";
+  #       HandleLidSwitchDocked = "ignore";
+  #     };
+  # };
 }
