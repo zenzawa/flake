@@ -6,7 +6,7 @@
   imports = [
     inputs.zen-browser.homeModules.twilight
     ./home/neovim/init.nix
-    ./home/hyprland.nix
+    ./home/hyprland/hyprland.nix
     ./home/waybar.nix
     ./home/i3/init.nix
     ./home/btop.nix
