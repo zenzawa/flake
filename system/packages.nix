@@ -19,6 +19,7 @@
     playerctl
     xinit
     hypridle
+    swayosd
   ];
 
   vulkan = with pkgs; [
