@@ -79,3 +79,7 @@ hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("swayosd-client --output-volume 
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("swayosd-client --output-volume lower"), { repeating = true })
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("swayosd-client --brightness +5"), { repeating = true })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("swayosd-client --brightness -5"), { repeating = true })
+
+-- Drag and Resize
+hl.bind("SUPER + mouse:272", hl.dsp.window.drag())
+hl.bind("SUPER + mouse:273", hl.dsp.window.resize())
