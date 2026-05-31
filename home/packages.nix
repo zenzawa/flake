@@ -42,6 +42,7 @@
     proton-vpn
     lsof
     wlsunset
+    miktex
   ];
 
   apps = with pkgs; [
