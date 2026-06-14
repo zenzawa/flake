@@ -19,6 +19,7 @@
     ./displayManager.nix
     ./stylix.nix
     ./ssh.nix
+    ./steam.nix
     ./systemd.nix
     ./user.nix
     ./virtualisation.nix
