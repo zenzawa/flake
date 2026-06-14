@@ -8,4 +8,8 @@
     home.file.".local/share/fonts/zpix.ttf".source = ../dots/OVERDOSE/zpix.ttf;
     home.file.".local/share/sounds/Plasma-Overdose".source = ../dots/OVERDOSE/Plasma-Overdose;
     home.file.".local/share/icons/WinXPSVG".source = ../dots/OVERDOSE/WinXPSVG;
+
+    # reactionary theme
+    home.file.".local/share/plasma/look-and-feel/org.magpie.reactplus.desktop".source = ../dots/OVERDOSE/reactplus-global;
+    home.file.".local/share/plasma/desktoptheme/reactplus".source = ../dots/OVERDOSE/reactplus-plasma;
   }

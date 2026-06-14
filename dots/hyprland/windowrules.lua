@@ -19,6 +19,7 @@ for _, cls in ipairs({
   "discord",
   ".virt-manager-wrapped",
   "org.wireshark.Wireshark",
+  "net.lutris.Lutris",
 }) do
   hl.window_rule({
     match = { class = cls },
