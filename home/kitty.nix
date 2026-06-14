@@ -24,6 +24,8 @@
       # -- map keys --
       map f1 launch --cwd=current
       map f2 launch --cwd=current --type=tab
+
+      allow_remote_control yes
     '';
   };
 

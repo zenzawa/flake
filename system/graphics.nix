@@ -26,7 +26,6 @@
     open = true; # enable the new nvidia open source drivers
 
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
 
   hardware.graphics = {

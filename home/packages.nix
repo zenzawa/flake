@@ -15,6 +15,7 @@
     tree
     git-lfs
     wtype
+    kdePackages.dolphin
   ];
 
   utils = with pkgs; [
@@ -42,6 +43,7 @@
     proton-vpn
     lsof
     wlsunset
+    miktex
   ];
 
   apps = with pkgs; [
@@ -56,13 +58,13 @@
     anki-bin
     brave
     telegram-desktop
-    qbittorrent
     qalculate-gtk
     vesktop
     discord
     upscayl
     hyprshot
     openutau
+    localsend
   ];
 
   dev = with pkgs; [
@@ -79,6 +81,7 @@
     jq # json processor
     antigravity-fhs
     octaveFull
+    wireshark
   ];
 
   i3 = with pkgs; [
@@ -100,6 +103,7 @@
 
   stable = with pkgs-stable; [
     kew
+    qbittorrent
   ];
 in {
   home.packages = systemPackages ++ utils ++ apps ++ dev ++ i3 ++ stable;

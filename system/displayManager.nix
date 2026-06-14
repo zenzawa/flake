@@ -1,5 +1,5 @@
 {...}: {
-  services.displayManager.plasma-login-manager = {
+  services.displayManager.ly = {
     enable = true;
   };
 }

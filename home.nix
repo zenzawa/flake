@@ -6,7 +6,8 @@
   imports = [
     inputs.zen-browser.homeModules.twilight
     ./home/neovim/init.nix
-    ./home/hyprland/init.nix
+    ./home/hyprland/hyprland.nix
+    ./home/waybar.nix
     ./home/i3/init.nix
     ./home/btop.nix
     ./home/cava.nix
@@ -14,7 +15,9 @@
     ./home/git.nix
     ./home/kitty.nix
     ./home/notification.nix
+    ./home/overdose.nix
     ./home/packages.nix
+    ./home/pywal.nix
     ./home/theme.nix
     ./home/wireplumber.nix
     ./home/zen.nix
@@ -30,6 +33,7 @@
   home.file.".config/yazi/yazi.toml".source = ./dots/yazi.toml;
 
   home.stateVersion = "24.11";
+
 
   programs.home-manager.enable = true;
 }

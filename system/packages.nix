@@ -11,13 +11,15 @@
     ntfs3g
     libnotify
     go-mtpfs
-    libsForQt5.qt5.qtquickcontrols2
-    libsForQt5.qt5.qtgraphicaleffects
-    libsForQt5.qt5.qtsvg
+    qt5.qtquickcontrols2
+    qt5.qtgraphicaleffects
+    qt5.qtsvg
     kdePackages.qt5compat
     cpuid
     playerctl
     xinit
+    hypridle
+    swayosd
   ];
 
   vulkan = with pkgs; [
@@ -73,4 +75,5 @@ in {
     ++ apps
     ++ virt
     ++ [evadm];
+
 }

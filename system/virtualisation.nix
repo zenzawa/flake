@@ -1,6 +1,7 @@
 {pkgs-stable, ...}: {
   programs.virt-manager.enable = true;
   services.qemuGuest.enable = true;
+  hardware.nvidia-container-toolkit.enable = true;
 
   virtualisation = {
     libvirtd = {

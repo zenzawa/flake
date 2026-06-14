@@ -10,8 +10,10 @@
     ./devices.nix
     ./environment.nix
     ./graphics.nix
+    ./hyprland.nix
     ./networking.nix
     ./packages.nix
+    ./plasma.nix
     ./programs.nix
     ./power.nix
     ./displayManager.nix

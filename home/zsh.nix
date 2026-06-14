@@ -154,6 +154,7 @@
       gco = "git checkout";
       gb = "git branch";
       gl = "git log";
+      hsuspend = "hyprlock & sleep 0.25 && systemctl suspend";
 
       # More advanced aliases
       glog = "git log --oneline --decorate --graph";

@@ -11,6 +11,7 @@
     feh.enable = false;
     zen-browser.enable = false;
     gdu.enable = false;
+    kde.enable = false;
   };
 
   home.file.".local/share/fonts/DIN" = {
@@ -20,7 +21,6 @@
 
   gtk = {
     enable = true;
-    gtk4.theme = null;
 
     iconTheme = {
       name = "WhiteSur";
