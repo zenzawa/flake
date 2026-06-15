@@ -52,3 +52,8 @@ hl.window_rule({ match = { class = "zen", title = "Save Image" }, size = { 800, 
 -- -- ── Layer rules ──────────────────────────────────────────────
 hl.layer_rule({ match = { namespace = "swaync-control-center" }, blur = true })
 hl.layer_rule({ match = { namespace = "swaync-notification-window" }, blur = true })
+
+hl.window_rule({
+  match = {class = "gjs"},
+  float = true
+})
