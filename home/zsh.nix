@@ -7,6 +7,14 @@
 
   home.file.".config/fastfetch/config.jsonc".source = ../dots/fastfetch.jsonc;
 
+  programs.bash = {
+      enable = true;
+
+      bashrcExtra= ''
+        fastfetch -c ~/flake/dots/OVERDOSE/fastfetch.jsonc
+      '';
+    };
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
