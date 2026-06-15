@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page description here" />
+  <meta name="author" content="Your Name" />
+
+  <title>INTANETO</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <img class="internet" src="icon_desktop_yapoo.png" />
+
+  <form action="https://www.google.com/search">
+    <img class="google" src="./image-removebg-preview.png" alt="Google Logo" />
+    <input name="q" placeholder="Search with Google or enter address" />
+  </form>
+
+  <script src="js/script.js"></script>
+
+  <style>
+    @font-face {
+      font-family: "Zpix";
+      src: url("zpix.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-image: url("bg.png");
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: "Zpix", sans-serif;
+    }
+
+    .google {
+      height: 25px;
+      margin: 0 10px;
+    }
+
+    .internet {
+      min-height: 100px;
+      max-width: 500px;
+      object-fit: contain;
+      margin-top: 100px;
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      width: 60%;
+    }
+
+    .input::placeholder {
+      font-family: "Zpix";
+    }
+
+    form {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      background: #e8d5ea;
+      padding: 10px 10px;
+      margin: 30px 0;
+      border-top: 3px solid #b59dce;
+      border-left: 3px solid #b59dce;
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+    }
+  </style>
+</body>
+
+</html>
