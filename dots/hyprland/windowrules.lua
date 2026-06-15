@@ -3,6 +3,7 @@ for _, cls in ipairs({
   "zen-beta",
   "zen-twilight",
   "zen",
+  "firefox",
   "code",
   "brave-browser",
   "org.telegram.desktop",
