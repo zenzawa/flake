@@ -6,6 +6,8 @@
     home.file.".local/share/color-schemes/PlasmaOverdose.colors".source = ../dots/OVERDOSE/PlasmaOverdose.colors;
 
     home.file.".local/share/fonts/zpix.ttf".source = ../dots/OVERDOSE/fonts/zpix.ttf;
+    home.file.".local/share/fonts/Ndot55-Regular.otf".source = ../dots/OVERDOSE/fonts/Ndot55-Regular.otf;
+    home.file.".local/share/fonts/Ndot55Caps-Regular.otf".source = ../dots/OVERDOSE/fonts/Ndot55Caps-Regular.otf;
     home.file.".local/share/fonts/Ndot57-Regular.otf".source = ../dots/OVERDOSE/fonts/Ndot57-Regular.otf;
     home.file.".local/share/fonts/Ndot57Caps-Regular.otf".source = ../dots/OVERDOSE/fonts/Ndot57Caps-Regular.otf;
     home.file.".local/share/fonts/Ndot77JPExtended.ttf".source = ../dots/OVERDOSE/fonts/Ndot77JPExtended.ttf;
