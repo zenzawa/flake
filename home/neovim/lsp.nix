@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  pkgs-stable,
+  ...
+}: {
   programs.nixvim.plugins.lsp = {
     enable = true;
     inlayHints = true;
@@ -16,7 +20,10 @@
       };
       ruff.enable = true; # this is python lsp written in rust
       html.enable = true;
-      cssls.enable = true;
+      cssls = {
+        enable = true;
+        package = pkgs-stable.vscode-langservers-extracted;
+      };
       tailwindcss.enable = true;
       jsonls.enable = true;
       ts_ls.enable = true;
