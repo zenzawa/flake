@@ -13,6 +13,7 @@
     home.file.".local/share/fonts/Ndot77JPExtended.ttf".source = ../dots/OVERDOSE/fonts/Ndot77JPExtended.ttf;
     home.file.".local/share/sounds/Plasma-Overdose".source = ../dots/OVERDOSE/Plasma-Overdose;
     home.file.".local/share/icons/WinXPSVG".source = ../dots/OVERDOSE/WinXPSVG;
+    home.file.".local/share/icons/SE98".source = ../dots/OVERDOSE/SE98;
 
     # reactionary theme
     home.file.".local/share/plasma/look-and-feel/org.magpie.reactplus.desktop".source = ../dots/OVERDOSE/reactplus-global;
