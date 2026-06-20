@@ -59,7 +59,6 @@
     brave
     telegram-desktop
     qalculate-gtk
-    vesktop
     discord
     upscayl
     hyprshot
@@ -81,7 +80,6 @@
     jq # json processor
     antigravity-fhs
     octaveFull
-    wireshark
   ];
 
   i3 = with pkgs; [
