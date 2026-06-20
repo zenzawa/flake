@@ -8,7 +8,7 @@
     ./home/neovim/init.nix
     ./home/hyprland/hyprland.nix
     ./home/waybar.nix
-    ./home/i3/init.nix
+    # ./home/i3/init.nix
     ./home/btop.nix
     ./home/cava.nix
     ./home/fzf.nix

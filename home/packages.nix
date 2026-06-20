@@ -37,19 +37,16 @@
     steam-run-free
     yt-dlp
     ffmpeg
-    mpvpaper
     sourceHighlight
     openssl
     proton-vpn
     lsof
     wlsunset
-    miktex
   ];
 
   apps = with pkgs; [
     easyeffects
     songrec
-    peaclock
     lazygit
     nicotine-plus
     galaxy-buds-client
@@ -57,6 +54,7 @@
     vlc
     anki-bin
     brave
+    firefox
     telegram-desktop
     qalculate-gtk
     discord
@@ -67,9 +65,7 @@
   ];
 
   dev = with pkgs; [
-    go
     podman-desktop
-    ghostty
     yaak
     nasm
     nodejs
@@ -79,30 +75,29 @@
     rustup
     jq # json processor
     antigravity-fhs
-    octaveFull
   ];
 
-  i3 = with pkgs; [
-    # Essential i3 packages
-    i3lock
-    i3status-rust
-    rofi
-    dunst
-    picom
-    feh
-
-    # System utilities
-    xss-lock
-    scrot
-
-    # bb
-    firefox
-  ];
+  # i3 = with pkgs; [
+  #   # Essential i3 packages
+  #   i3lock
+  #   i3status-rust
+  #   rofi
+  #   dunst
+  #   picom
+  #   feh
+  #
+  #   # System utilities
+  #   xss-lock
+  #   scrot
+  #
+  #   # bb
+  #   firefox
+  # ];
 
   stable = with pkgs-stable; [
     kew
     qbittorrent
   ];
 in {
-  home.packages = systemPackages ++ utils ++ apps ++ dev ++ i3 ++ stable;
+  home.packages = systemPackages ++ utils ++ apps ++ dev ++ stable;
 }
