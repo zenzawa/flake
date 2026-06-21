@@ -42,6 +42,7 @@
     proton-vpn
     lsof
     wlsunset
+    gpu-screen-recorder-gtk
   ];
 
   apps = with pkgs; [
