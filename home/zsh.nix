@@ -9,6 +9,9 @@
 
   programs.bash = {
     enable = true;
+    shellAliases = {
+        "神様なんていないよ"= "echo There is no God.";
+      };
 
     bashrcExtra = ''
       PS1='\w ❯ '
