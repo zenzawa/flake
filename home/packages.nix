@@ -42,6 +42,7 @@
     proton-vpn
     lsof
     wlsunset
+    gjs
   ];
 
   apps = with pkgs; [
