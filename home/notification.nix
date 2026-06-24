@@ -9,7 +9,7 @@
   home.file.".config/swayosd/style.css".source = ../dots/swayosd.css;
 
   services.swaync = {
-    enable = true;
+    enable = false;
   };
 
   services.swayosd = {
