@@ -53,7 +53,6 @@
     galaxy-buds-client
     celluloid
     vlc
-    anki-bin
     brave
     firefox
     telegram-desktop
@@ -98,6 +97,7 @@
   stable = with pkgs-stable; [
     kew
     qbittorrent
+    anki-bin
   ];
 in {
   home.packages = systemPackages ++ utils ++ apps ++ dev ++ stable;
