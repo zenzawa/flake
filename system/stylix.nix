@@ -1,6 +1,5 @@
 {
   pkgs,
-  pkgs-stable,
   ...
 }: {
   fonts.packages = with pkgs; [
@@ -15,12 +14,6 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/mountain.yaml";
-
-    cursor = {
-      name = "WhiteSur-cursors";
-      package = pkgs-stable.whitesur-cursors;
-      size = 32;
-    };
 
     fonts = {
       sansSerif = {
