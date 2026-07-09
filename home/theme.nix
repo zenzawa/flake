@@ -19,15 +19,7 @@
     recursive = true;
   };
 
-  home.file.".local/share/icons/WhiteSur-cursors" = {
-    source = ../assets/WhiteSur-cursors;
-    recursive = true;
-  };
-
-  home.sessionVariables = {
-    XCURSOR_THEME = "WhiteSur-cursors";
-    XCURSOR_SIZE = "36";
-  };
+  home.pointerCursor.enable = true;
 
   gtk = {
     enable = true;

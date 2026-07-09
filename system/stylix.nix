@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   fonts.packages = with pkgs; [
     noto-fonts
     inter
@@ -14,6 +11,15 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/mountain.yaml";
+
+    cursor = {
+      name = "WhiteSur-cursors";
+      size = 24;
+      package = pkgs.runCommand "WhiteSur-cursors" {} ''
+        mkdir -p $out/share/icons
+        cp -r ${../assets/WhiteSur-cursors} $out/share/icons/WhiteSur-cursors
+      '';
+    };
 
     fonts = {
       sansSerif = {
