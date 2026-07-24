@@ -74,7 +74,7 @@
     deno
     rustup
     jq # json processor
-    antigravity-fhs
+    antigravity-ide-fhs
   ];
 
   # i3 = with pkgs; [
