@@ -15,6 +15,7 @@
     qt5.qtgraphicaleffects
     qt5.qtsvg
     kdePackages.qt5compat
+    kdePackages.baloo
     cpuid
     playerctl
     xinit
@@ -45,7 +46,6 @@
     nautilus
     xclip
     wl-clipboard
-    cloudflare-warp
   ];
 
   virt = with pkgs-stable; [
