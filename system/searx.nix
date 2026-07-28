@@ -22,6 +22,8 @@
       ui = {
         results_on_new_tab = false;
         query_in_title = true;
+
+        theme_args.simple_style = "black";
       };
 
       use_default_settings = {
@@ -33,6 +35,7 @@
             "arxiv"
             "askubuntu"
             "bandcamp"
+            "brave"
             "bt4g"
             "chefkoch (DE)"
             "currency"
@@ -42,6 +45,7 @@
             "devicons"
             "dictzone"
             "docker hub"
+            "duckduckgo"
             "duckduckgo images"
             "etymonline"
             "flickr"
@@ -84,6 +88,7 @@
             "solidtorrents"
             "soundcloud"
             "stackoverflow"
+            "startpage"
             "superuser"
             "unsplash"
             "vimeo"
@@ -127,6 +132,10 @@
           disabled = false;
         }
         {
+          name = "brave";
+          disabled = false;
+        }
+        {
           name = "bt4g";
           disabled = false;
         }
@@ -160,6 +169,10 @@
         }
         {
           name = "docker hub";
+          disabled = false;
+        }
+        {
+          name = "duckduckgo";
           disabled = false;
         }
         {
@@ -328,6 +341,10 @@
         }
         {
           name = "stackoverflow";
+          disabled = false;
+        }
+        {
+          name = "startpage";
           disabled = false;
         }
         {
