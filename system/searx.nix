@@ -202,10 +202,12 @@
         {
           name = "google";
           disabled = false;
+          weight = 3;
         }
         {
           name = "google cse";
           disabled = false;
+          weight = 3;
         }
         {
           name = "google cse images";
