@@ -37,6 +37,7 @@
     gnumake
     gdb
     docker-compose
+    (llama-cpp.override {cudaSupport = true;})
   ];
 
   apps = with pkgs; [
@@ -75,5 +76,4 @@ in {
     ++ apps
     ++ virt
     ++ [evadm];
-
 }
