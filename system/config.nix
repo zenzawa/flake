@@ -17,6 +17,7 @@
     ./programs.nix
     ./power.nix
     ./displayManager.nix
+    ./searx.nix
     ./stylix.nix
     ./ssh.nix
     ./steam.nix
