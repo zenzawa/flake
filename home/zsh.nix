@@ -135,6 +135,28 @@
               kill -9 $(lsof -t -i :$port)
           }
 
+      # Function to launch llama-server with the specified model file
+          qwen() {
+            if [ -z "$1" ]; then
+              echo "Error: Please provide the path to the model file."
+                echo "Usage: qwen <path_to_model>"
+                return 1
+                fi
+
+                llama-server -m "$1" -ngl 999 --flash-attn on -c 32768 --jinja --webui-mcp-proxy --host 0.0.0.0 --port 6700
+          }
+
+          mcp-searx() {
+              export SEARXNG_URL="http://127.0.0.1:6900"
+              export MCP_HTTP_PORT=4200
+              npx -y mcp-searxng
+            }
+
+      # Zsh autocomplete configuration (only suggests .gguf files and folders)
+          _qwen_complete() {
+            _files -g "*.gguf"
+          }
+          compdef _qwen_complete qwen
 
     '';
 
