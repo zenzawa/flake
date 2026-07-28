@@ -11,7 +11,9 @@
         method = "GET";
       };
 
-      general.instance_name = "インターネット";
+      general = {
+        instance_name = "インターネット";
+      };
 
       search = {
         safe_search = 0;
@@ -24,6 +26,8 @@
         query_in_title = true;
 
         theme_args.simple_style = "black";
+        center_alignment = true;
+        infinite_scroll = true;
       };
 
       use_default_settings = {
