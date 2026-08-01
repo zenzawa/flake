@@ -30,14 +30,14 @@
     vulkan-validation-layers
   ];
 
-  dev = with pkgs; [
+  dev = with pkgs-stable; [
     git
     wget
     gcc
     gnumake
     gdb
     docker-compose
-    (llama-cpp.override {cudaSupport = true;})
+    # (llama-cpp.override {cudaSupport = true;})
   ];
 
   apps = with pkgs; [
