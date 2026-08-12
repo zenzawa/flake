@@ -29,6 +29,10 @@
       "vm.page-cluster" = 0;
     };
 
+    extraModprobeConfig = ''
+        options cfg80211 ieee80211_regdom=IN
+    '';
+
     tmp.cleanOnBoot = true;
     tmp.useTmpfs = false;
 

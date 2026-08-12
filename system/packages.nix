@@ -21,6 +21,7 @@
     xinit
     hypridle
     swayosd
+    iw
   ];
 
   vulkan = with pkgs; [
