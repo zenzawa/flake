@@ -87,6 +87,10 @@
             sudo nixos-rebuild switch --flake ~/flake#senzawa --impure
           }
 
+          rebuild-boot() {
+            sudo nixos-rebuild boot --flake ~/flake#senzawa --impure
+          }
+
           ff() {
             local file
               file=$(fzf --query="$1") || return
