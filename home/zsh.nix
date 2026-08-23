@@ -202,6 +202,7 @@
       kewie = "cd ~/Music && kew \$(fzf)";
       celld = "celluloid \$(find . -type d |fzf)/*";
       dvim = "cd ~ && cd \$(find * -type d | fzf) && nvim .";
+      dlp = ''yt-dlp -f "bv*[height<=720][vcodec^=av01]+ba/bv*[height<=720][vcodec^=vp9]+ba/bv*[height<=720][vcodec^=avc1]+ba" --cookies-from-browser brave'';
       "177013" = "xdg-open https://nhentai.to/g/177013";
       "へんたい" = "xdg-open https://nhentai.to/g/177013";
       "344322" = "xdg-open https://nhentai.net/g/344322";
