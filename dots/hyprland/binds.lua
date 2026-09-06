@@ -25,7 +25,7 @@ hl.bind("SUPER + S", hl.dsp.exec_cmd("hyprshot -m output"))
 -- -- Resize with SUPER_SHIFT + arrow / WASD
 hl.bind("SUPER + SHIFT + right", hl.dsp.window.resize({ x = 100, y = 0, relative = true }))
 hl.bind("SUPER + SHIFT + left", hl.dsp.window.resize({ x = -100, y = 0 , relative = true }))
-hl.bind("SUPER + SHIFT + down", hl.dsp.window.resize({ x = 0, y = 100, relaitve = true }))
+hl.bind("SUPER + SHIFT + down", hl.dsp.window.resize({ x = 0, y = 100, relative = true }))
 hl.bind("SUPER + SHIFT + up", hl.dsp.window.resize({ x = 0, y = -100 , relative = true}))
 hl.bind("SUPER + SHIFT + D", hl.dsp.window.resize({ x = 100, y = 0 , relative = true}))
 hl.bind("SUPER + SHIFT + A", hl.dsp.window.resize({ x = -100, y = 0 , relative = true}))
