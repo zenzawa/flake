@@ -17,6 +17,7 @@ for _, cls in ipairs({
   "org.qbittorrent.qBittorrent",
   "Ryujinx",
   "antigravity",
+  "antigravity-ide",
   "discord",
   ".virt-manager-wrapped",
   "org.wireshark.Wireshark",
