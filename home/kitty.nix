@@ -26,6 +26,7 @@
       map f2 launch --cwd=current --type=tab
 
       allow_remote_control yes
+      remember_window_size no
     '';
   };
 
