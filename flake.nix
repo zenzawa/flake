@@ -7,7 +7,10 @@
 
 		home-manager.url = "github:nix-community/home-manager/release-26.05";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
     minegrub-world-sel-theme.url = "github:zenzawa/minegrub-world-sel-theme";
+
+    stylix.url = "github:nix-community/stylix/release-26.05";
 
 		nixvim.url = "github:nix-community/nixvim/nixos-26.05";
 	};
@@ -18,6 +21,7 @@
 			nixpkgs-unstable,
 			home-manager,
 			nixvim,
+      stylix,
 			...
 	}: {
 # Please replace my-nixos with your hostname
@@ -59,6 +63,7 @@
 							};
 						}
             inputs.minegrub-world-sel-theme.nixosModules.default
+            stylix.nixosModules.stylix
 				];
 			};
 		};

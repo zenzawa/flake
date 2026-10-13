@@ -15,6 +15,7 @@
     ./searx.nix
     ./ssh.nix
     ./steam.nix
+    ./stylix.nix
     ./user.nix
     ./virtualisation.nix
   ];
