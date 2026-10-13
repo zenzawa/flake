@@ -7,6 +7,7 @@
 
 		home-manager.url = "github:nix-community/home-manager/release-26.05";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    minegrub-world-sel-theme.url = "github:zenzawa/minegrub-world-sel-theme";
 
 		nixvim.url = "github:nix-community/nixvim/nixos-26.05";
 	};
@@ -57,6 +58,7 @@
 								inherit inputs;
 							};
 						}
+            inputs.minegrub-world-sel-theme.nixosModules.default
 				];
 			};
 		};
