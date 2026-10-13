@@ -15,20 +15,6 @@
 
   services.xserver.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  programs.firefox.enable = true;
-
-  # List packages installed in system profile.
-  # You can use https://search.nixos.org/ to find more packages (and options).
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    git
-    neovim
-    fastfetch
-    easyeffects
-  ];
-
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.

@@ -7,7 +7,14 @@
     ./displayManager.nix
     ./environment.nix
     ./graphics.nix
+    ./locale.nix
+    ./networking.nix
+    ./packages.nix
     ./plasma.nix
+    ./programs.nix
+    ./searx.nix
+    ./ssh.nix
+    # ./steam.nix
     ./user.nix
   ];
 
