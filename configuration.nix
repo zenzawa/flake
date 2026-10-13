@@ -113,6 +113,7 @@
 			wget
 			git
 			neovim
+			fastfetch
 			easyeffects
 	];
 

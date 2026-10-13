@@ -6,6 +6,10 @@
   home.username = username;
   home.homeDirectory = ''/home/${username}'';
 
+  imports = [
+	./home/zsh.nix
+];
+
 
   home.stateVersion = "26.05";
 

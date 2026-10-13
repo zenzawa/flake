@@ -1,0 +1,65 @@
+window#osd {
+  border: none;
+  background: rgba(40, 40, 40, 0.3);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  font-family: "DejaVu Sans", "Inter", "Noto Sans", sans-serif;
+
+  #container {
+    margin: 16px;
+  }
+
+  image,
+  label {}
+
+  progressbar:disabled,
+  image:disabled {
+    opacity: 0.5;
+  }
+
+  progressbar,
+  segmentedprogress {
+    min-height: 6px;
+    border-radius: 999px;
+    background: transparent;
+    border: none;
+  }
+
+  trough,
+  segment {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background-color: rgba(69, 71, 90, 0.6);
+    border-radius: 6px;
+  }
+
+  progressbar progress {
+    /* Segmented look – adjust percentages for number of segments */
+    background: repeating-linear-gradient(90deg,
+        #89b4fa 0% 12%,
+        /* filled segment width */
+        #45475a 12% 20%
+        /* gap width → change this ratio */
+      );
+    border-radius: 6px;
+    transition: all 0.15s ease;
+  }
+
+  progress,
+  segment.active {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+  }
+
+  segment {
+    margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

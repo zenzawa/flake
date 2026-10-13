@@ -1,0 +1,18 @@
+# Video & audio player using Celluloid
+[opener]
+play = [
+# Main option: open in Celluloid (non-blocking)
+{ run = 'celluloid %s', orphan = false, for = "unix", desc = "Celluloid" },
+
+# Fallback: use xdg-open (usually opens your default video player)
+{ run = 'xdg-open %s',  desc = "System default", for = "unix" },
+]
+
+[open]
+prepend_rules = [
+# ── Video files ───────────────────────────────────────────────
+{ mime = "video/*", use = "play" },
+
+# ── Audio files ───────────────────────────────────────────────
+{ mime = "audio/*", use = "play" },
+]

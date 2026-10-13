@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -0.5 45 44"
+   shape-rendering="crispEdges"
+   version="1.1"
+   id="svg35"
+   sodipodi:docname="uk.co.pcem_emulator.pcem.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs35" />
+  <sodipodi:namedview
+     id="namedview35"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:current-layer="svg35" />
+  <metadata
+     id="metadata1">Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+  <g
+     id="g1"
+     transform="matrix(1.6174721,0,0,1.6174721,-5.6366816,-27.586105)">
+    <path
+       stroke="#808080"
+       d="M 10,18 H 27.088868 M 9,19 h 1 m 16,0 h 1 M 8,20 h 1 m 16,0 h 1 m 2,0 h 1 M 5.990099,21 H 8 m 16,0 h 1 m 1,0 h 1 m 1,0 h 1 M 6,22 h 1 m 18,0 h 1 m 2,0 h 1 M 6,23 h 1 m 17,0 h 1 m 1,0 h 1 m 1,0 h 1 M 6,24 h 1 m 18,0 h 1 m 2,0 h 1 M 6,25 h 1 m 17,0 h 1 m 1,0 h 1 m 1,0 h 1 M 6,26 h 1 m 18,0 h 1 m 2,0 h 1 M 6,27 h 1 m 17,0 h 1 m 1,0 h 1 m 1,0 h 1 M 6,28 h 1 m 18,0 h 1 m 2,0 h 1 M 6,29 h 1 m 17,0 h 1 m 1,0 h 1 m 1,0 h 1 M 6,30 h 1 m 18,0 h 1 m 2,0 h 1 M 6,31 h 1 m 17,0 h 1 m 1,0 h 1 m 1,0 h 1 M 6,32 h 1 m 18,0 h 1 m 1,0 h 1 M 6,33 h 1 m 17,0 h 1 M 6,34 h 1 m 20,0 h 3 m -4,1 h 3 m -4,1 h 3 M 5,37 h 22 m 2,0 h 1 M 4,38 h 1 m 23,0 h 1 M 4,39 h 1 m 11,0 h 7 m 4,0 h 1 m 1,0 h 1 M 4,40 h 1 m 23,0 h 1 M 4,41 h 1 m 22,0 h 1 M 4,42 h 1"
+       id="path1"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       stroke="#6e6e6e"
+       d="m 26,20 h 1 m -2,1 h 1 m -2,1 h 1 m 1,0 h 1 m -2,1 h 1 m -2,1 h 1 m 1,0 h 1 m -2,1 h 1 m -2,1 h 1 m 1,0 h 1 m -2,1 h 1 m -2,1 h 1 m 1,0 h 1 m -2,1 h 1 m -2,1 h 1 m 1,0 h 1 m -2,1 h 1 m -2,1 h 1 m 4,4 h 1 m -2,1 h 1 m -2,1 h 1 m 1,0 h 1 m -2,1 h 1 m -2,1 h 1 m 1,0 h 1 m -2,1 h 1 m -2,1 h 1"
+       id="path3"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       stroke="#000000"
+       d="m 27,19 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -2,1 h 1 m -2,1 h 5.98964 M 24,34 h 1 m 5,0 h 1 M 7,35 h 17 m 6,0 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -2,1 h 1 m -2,1 h 1 M 5,43 h 23"
+       id="path4"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       stroke="#ffffff"
+       d="m 9,18 h 1 m 15,1 h 1 m -2,1 h 1 M 8,21 H 24 M 7,22 h 1 m -1,1 h 1 m 14,0 h 1 M 7,24 h 1 m 14,0 h 1 M 7,25 h 1 m 14,0 h 1 M 7,26 h 1 m 14,0 h 1 M 7,27 h 1 m 14,0 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 M 12,33 H 23 M 5,38 H 27 M 5,39 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1"
+       id="path5"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       stroke="#c0c0c0"
+       d="m 10,19 h 15 m 3,0 h 1 M 9,20 H 24 M 8,22 H 24 M 8,23 h 1 m 14,0 h 1 M 8,24 h 1 m 14,0 h 1 M 8,25 h 1 m 14,0 h 1 M 8,26 h 1 m 14,0 h 1 M 8,27 h 1 m 14,0 h 1 M 8,28 h 1 m 14,0 h 1 M 8,29 h 1 m 14,0 h 1 M 8,30 h 1 m 14,0 h 1 M 8,31 h 1 m 14,0 h 1 M 8,32 h 1 m 14,0 h 1 m 5,0 h 1 M 8,33 h 1 m 14,0 h 1 M 8,34 h 16 m 5,1 h 1 m -2,1 h 1 m -2,1 h 1 M 6,39 h 2 m 3,0 h 5 m 7,0 h 4 M 6,40 H 27 M 6,41 H 27 M 6,42 h 21"
+       id="path6"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       stroke="#c2c2c2"
+       d="M 7,34 H 8"
+       id="path7"
+       sodipodi:nodetypes="cc" />
+    <path
+       stroke="#e6e6e6"
+       d="M 7,28 H 8 M 7,29 H 8 M 7,30 H 8 M 7,31 H 8 M 7,32 H 8 M 7,33 H 8"
+       id="path16"
+       sodipodi:nodetypes="cccccccccccc" />
+    <path
+       stroke="#9e9e9e"
+       d="m 29,20 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1"
+       id="path17" />
+    <path
+       stroke="#003250"
+       d="M 9,23 H 22 M 9,24 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1"
+       id="path18" />
+    <path
+       stroke="#25aaff"
+       d="m 10,24 h 10 m -10,1 h 1 m 7,0 h 2 m -10,1 h 1 m 6,0 h 1 m 1,0 h 1 m -10,1 h 1 m 5,0 h 1 m 1,0 h 2 m -10,1 h 1 m 4,0 h 1 m 1,0 h 1 m 1,0 h 1 m -10,1 h 1 m 3,0 h 1 m 1,0 h 1 m 1,0 h 2 m -10,1 h 1 m 1,0 h 8"
+       id="path19" />
+    <path
+       stroke="#0092dc"
+       d="m 20,24 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -11,1 h 11"
+       id="path20" />
+    <path
+       stroke="#006296"
+       d="m 21,24 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -1,1 h 1 m -12,1 h 12"
+       id="path21" />
+    <path
+       stroke="#d4ffff"
+       d="m 11,25 h 1"
+       id="path22" />
+    <path
+       stroke="#8effff"
+       d="m 12,25 h 2 m -3,1 h 2 m -2,1 h 1"
+       id="path23" />
+    <path
+       stroke="#8ed4ff"
+       d="m 14,25 h 1 m -2,1 h 1 m -2,1 h 1 m -2,1 h 1"
+       id="path24" />
+    <path
+       stroke="#6bc6ff"
+       d="m 15,25 h 1 m -2,1 h 1 m 1,0 h 1 m -4,1 h 1 m 1,0 h 1 m -4,1 h 1 m 1,0 h 1 m -4,1 h 1 m 1,0 h 1"
+       id="path25" />
+    <path
+       stroke="#48b8ff"
+       d="m 16,25 h 2 m -3,1 h 1 m 2,0 h 1 m -5,1 h 1 m 2,0 h 1 m -5,1 h 1 m 2,0 h 1 m 1,0 h 1 m -7,1 h 1 m 2,0 h 1 m 1,0 h 1"
+       id="path26" />
+    <path
+       stroke="#aaaaaa"
+       d="m 29,31 h 1 m -2,1 h 1"
+       id="path27"
+       sodipodi:nodetypes="cccc" />
+    <path
+       stroke="#00aaff"
+       d="m 11,30 h 1"
+       id="path31" />
+    <path
+       stroke="#f2f2f2"
+       d="m 9,33 h 3"
+       id="path32" />
+    <path
+       stroke="#4a4a4a"
+       d="m 25,34 h 1 m -2,1 h 1 M 7,36 h 17"
+       id="path33" />
+    <path
+       stroke="#626262"
+       d="m 26,34 h 1 m -2,1 h 1 m -2,1 h 1"
+       id="path34" />
+    <path
+       stroke="#00ff00"
+       d="m 8,39 h 3"
+       id="path35" />
+  </g>
+</svg>

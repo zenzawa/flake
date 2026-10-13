@@ -1,0 +1,235 @@
+{
+  pkgs,
+    config,
+    ...
+}: {
+  home.file.".p10k.zsh".source = ../dots/.p10k.zsh;
+
+  home.file.".config/fastfetch/config.jsonc".source = ../dots/fastfetch.jsonc;
+
+  programs.bash = {
+    enable = true;
+    shellAliases = {
+      "神様なんていないよ" = "echo There is no God.";
+    };
+
+    bashrcExtra = ''
+      PS1='\w ❯ '
+      fastfetch -c ~/flake/dots/OVERDOSE/fastfetch.jsonc
+
+      fd() {
+        cd ~
+          local dir
+          dir="$(find . -type d 2>/dev/null | fzf)"
+          [ -n "$dir" ] && cd "$dir"
+      }
+    '';
+  };
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    autocd = true;
+
+    history = {
+      size = 10000;
+      path = "${config.xdg.dataHome}/zsh/history";
+      ignoreDups = true;
+      share = true;
+      extended = true;
+    };
+
+    initContent = ''
+      fastfetch
+
+# LESS SYNTAX HIGHLIGHT
+      export LESSOPEN="| ${pkgs.sourceHighlight}/bin/src-hilities-lesspipe.sh %s"
+      export LESS=" -R "
+
+# Enable Powerlevel10k instant prompt
+      if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+        source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+          fi
+
+# source the theme
+          source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+
+# add ssh key from ~/.key gor github
+#    if [ -z "$SSH_AUTH_SOCK" ]; then
+#      eval "$(ssh-agent -s)"
+#        ssh-add ~/zenkey # or id_rsa if you use RSA keys
+#        fi
+
+# to customize prompt, run `p10k configure` or edit ~/.p10k.zsh
+          [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# highlight man using nvim
+          vman() { nvim <(man $1); }
+
+    wifer() {
+      systemctl suspend
+        ~/bits-login/login.sh
+        sudo warp-svc
+        warp-cli connect
+    }
+
+    cleaner() {
+      sudo nix profile wipe-history  --profile /nix/var/nix/profiles/system
+        sudo nix-collect-garbage --delete-old
+        nix-collect-garbage --delete-old
+        nix store gc
+        sudo nix store optimise
+    }
+
+    rebuild() {
+      sudo nixos-rebuild switch --flake ~/flake#senzawa --impure
+    }
+
+    rebuild-boot() {
+      sudo nixos-rebuild boot --flake ~/flake#senzawa --impure
+    }
+
+    ff() {
+      local file
+        file=$(fzf --query="$1") || return
+        cd "$(dirname "$file")" || return
+    }
+
+    fd() {
+      cd ~
+        local dir
+        dir="$(find . -type d 2>/dev/null | fzf)"
+        [ -n "$dir" ] && cd "$dir"
+    }
+
+
+    fvim() {
+      local file
+        file=$(fzf --query="$1") || return
+        nvim "$file" || return
+    }
+
+    standwal() {
+      cd
+        mkdir .flakewal
+        wal -i ~/flake/assets/wallpapers/bakane.jpg
+        rsync -a ~/.cache/wal/ ~/.flakewal
+        wal -i ~/flake/assets/wallpapers/fireflychi.png
+    }
+
+    waller() {
+      cd
+        mkdir .flakewal
+        wal -i ~/flake/assets/wallpapers/bakane.jpg
+        rsync -a ~/.cache/wal/ ~/.flakewal
+        wal -i "$1"
+    }
+
+    compdef _waller waller
+
+      _waller() {
+        _files
+      }
+
+
+    killport () {
+      local port=$1
+        kill -9 $(lsof -t -i :$port)
+    }
+
+# Function to launch llama-server with the specified model file
+    qwen() {
+      if [ -z "$1" ]; then
+        echo "Error: Please provide the path to the model file."
+          echo "Usage: qwen <path_to_model>"
+          return 1
+          fi
+
+          llama-server -m "$1" -ngl 999 --flash-attn on -c 32768 --jinja --webui-mcp-proxy --host 0.0.0.0 --port 6700
+    }
+
+    mcp-searx() {
+      export SEARXNG_URL="http://127.0.0.1:6900"
+        export MCP_HTTP_PORT=4200
+        npx -y mcp-searxng
+    }
+
+# Zsh autocomplete configuration (only suggests .gguf files and folders)
+    _qwen_complete() {
+      _files -g "*.gguf"
+    }
+    compdef _qwen_complete qwen
+
+# Function to toggle angel 
+      angel() {
+        emulate -L zsh
+
+
+          local con_name="angel"
+# Fetch active connections directly into a Zsh array
+          local -a active_cons
+          active_cons=("''${(@f)$(nmcli -t -f NAME connection show --active)}")
+
+# Check if the connection exists in the array
+          if (( ''${active_cons[(Ie)$con_name]} )); then
+            print "Deactivating ''${con_name}..."
+              nmcli connection down id "$con_name"
+          else
+            print "Activating ''${con_name}..."
+              nmcli connection up id "$con_name"
+              fi
+      }
+
+    '';
+
+    plugins = [
+    {
+      name = "powerlevel10k";
+      src = pkgs.zsh-powerlevel10k;
+      file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    }
+    ];
+
+    shellAliases = {
+      saymyname = "echo Heisenberg";
+      warper = "sudo true && sudo warp-svc & (sleep 3 && warp-cli connect) & wait";
+      ama = "adb start-server &&";
+      vim = "nvim";
+      timer = "sudo -E timeshift-gtk";
+      img = "kitten icat";
+      kewie = "cd ~/Music && kew \$(fzf)";
+      celld = "celluloid \$(find . -type d |fzf)/*";
+      dvim = "cd ~ && cd \$(find * -type d | fzf) && nvim .";
+      dlp = ''yt-dlp -f "bv*[height<=720][vcodec^=av01]+ba/bv*[height<=720][vcodec^=vp9]+ba/bv*[height<=720][vcodec^=avc1]+ba" --cookies-from-browser brave'';
+      "177013" = "xdg-open https://nhentai.to/g/177013";
+      "へんたい" = "xdg-open https://nhentai.to/g/177013";
+      "344322" = "xdg-open https://nhentai.net/g/344322";
+      wifilogin = "~/bits-login/login.sh";
+# Basic git commands
+      g = "git";
+      gs = "git status";
+      ga = "git add";
+      gaa = "git add --all";
+      gc = "git commit -v";
+      gcmsg = "git commit -m";
+      gp = "git push";
+      gpl = "git pull";
+      gd = "git diff";
+      gco = "git checkout";
+      gb = "git branch";
+      gl = "git log";
+      hsuspend = "hyprlock & sleep 0.25 && systemctl suspend";
+
+# More advanced aliases
+      glog = "git log --oneline --decorate --graph";
+      grb = "git rebase";
+      grs = "git reset";
+      grh = "git reset --hard";
+      gcl = "git clone";
+      gf = "git fetch";
+      gm = "git merge";
+    };
+  };
+}
