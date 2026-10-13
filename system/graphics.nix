@@ -1,7 +1,6 @@
 {
   pkgs,
   lib,
-  config,
   ...
 }: {
   services.xserver.videoDrivers = ["nvidia" "amdgpu"];
@@ -9,19 +8,19 @@
   hardware.nvidia = {
     modesetting.enable = true;
 
-    # prime = {
-    #   offload = {
-    #     enable = true;
-    #     enableOffloadCmd = true;
-    #   };
-    #
-    #   amdgpuBusId = "PCI:5:0:0";
-    #   nvidiaBusId = "PCI:1:0:0";
-    # };
-    #
-    # # see arch wiki preserve nvidia video memory
-    # powerManagement.enable = true;
-    # powerManagement.finegrained = true;
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+
+      amdgpuBusId = "PCI:5:0:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
+
+    # see arch wiki preserve nvidia video memory
+    powerManagement.enable = true;
+    powerManagement.finegrained = true;
 
     open = true; # enable the new nvidia open source drivers
 
@@ -37,15 +36,15 @@
     ];
   };
 
-  # specialisation.gaming-shit.configuration = {
-  #   hardware.nvidia = {
-  #     prime.sync.enable = lib.mkForce true;
-  #     powerManagement.finegrained = lib.mkForce false;
-  #
-  #     prime.offload = {
-  #       enable = lib.mkForce false;
-  #       enableOffloadCmd = lib.mkForce false;
-  #     };
-  #   };
-  # };
+  specialisation.gaming-shit.configuration = {
+    hardware.nvidia = {
+      prime.sync.enable = lib.mkForce true;
+      powerManagement.finegrained = lib.mkForce false;
+
+      prime.offload = {
+        enable = lib.mkForce false;
+        enableOffloadCmd = lib.mkForce false;
+      };
+    };
+  };
 }
