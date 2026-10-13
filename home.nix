@@ -8,6 +8,7 @@
 
   imports = [
 	./home/zsh.nix
+	./home/neovim/init.nix
 ];
 
 
