@@ -16,6 +16,7 @@
     ./ssh.nix
     # ./steam.nix
     ./user.nix
+    ./virtualisation.nix
   ];
 
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];

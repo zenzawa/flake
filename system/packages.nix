@@ -47,6 +47,7 @@
     nautilus
     xclip
     wl-clipboard
+    firefox
   ];
 
   virt = with pkgs; [

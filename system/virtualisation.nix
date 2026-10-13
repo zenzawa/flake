@@ -1,4 +1,4 @@
-{pkgs-stable, ...}: {
+{pkgs, ...}: {
   programs.virt-manager.enable = true;
   services.qemuGuest.enable = true;
   hardware.nvidia-container-toolkit.enable = true;
@@ -8,7 +8,7 @@
       enable = true;
 
       qemu = {
-        package = pkgs-stable.qemu_kvm;
+        package = pkgs.qemu_kvm;
       };
     };
 
