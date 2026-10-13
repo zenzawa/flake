@@ -15,6 +15,8 @@
     ./home/kitty.nix
     ./home/launcher.nix
     ./home/notification.nix
+    ./home/overdose.nix
+    ./home/packages.nix
     ./home/pywal.nix
     ./home/waybar.nix
     ./home/wireplumber.nix
