@@ -59,7 +59,7 @@
 # add ssh key from ~/.key gor github
 #    if [ -z "$SSH_AUTH_SOCK" ]; then
 #      eval "$(ssh-agent -s)"
-#        ssh-add ~/zenkey # or id_rsa if you use RSA keys
+#        ssh-add ~/.ssh/zenkey # or id_rsa if you use RSA keys
 #        fi
 
 # to customize prompt, run `p10k configure` or edit ~/.p10k.zsh

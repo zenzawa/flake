@@ -2,10 +2,12 @@
   programs.ssh = {
     startAgent = true;
     extraConfig = ''
-    AddKeysToAgent yes
-    Host github.com
-      User git
-      IdentityFile /home/zenzawa/zenkey
-    '' ;
+      Host github.com
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/zenkey
+         AddKeysToAgent yes
+         IdentitiesOnly yes
+    '';
   };
 }
