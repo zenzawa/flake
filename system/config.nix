@@ -26,12 +26,12 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  # nix.gc = {
-  #   automatic = true;
-  #   dates = "weekly";
-  # };
-  #
-  # nix.settings.auto-optimise-store = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+  };
+
+  nix.settings.auto-optimise-store = true;
 
   # -------------------- LOCALIZATION --------------------------
   time.timeZone = "Asia/Tokyo";
@@ -40,10 +40,10 @@
   location.longitude = "85";
 
   # ------------------- ZRAM -----------------------------------
-  # zramSwap = {
-  #   enable = true;
-  #   memoryPercent = 50;
-  #   algorithm = "zstd";
-  #   priority = 5;
-  # };
+  zramSwap = {
+    enable = true;
+    memoryPercent = 50;
+    algorithm = "zstd";
+    priority = 5;
+  };
 }
