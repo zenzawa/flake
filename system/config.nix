@@ -7,6 +7,7 @@
     ./displayManager.nix
     ./environment.nix
     ./graphics.nix
+    ./hyprland.nix
     ./locale.nix
     ./networking.nix
     ./packages.nix
