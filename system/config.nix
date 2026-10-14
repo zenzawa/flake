@@ -13,7 +13,7 @@
     ./packages.nix
     ./plasma.nix
     ./programs.nix
-    ./searx.nix
+    # ./searx.nix
     ./ssh.nix
     ./steam.nix
     ./stylix.nix
