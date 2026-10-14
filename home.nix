@@ -4,8 +4,9 @@
   ...
 }: {
   imports = [
-      inputs.zen-browser.homeModules.twilight
+    inputs.zen-browser.homeModules.twilight
     ./home/neovim/init.nix
+    ./home/hyprland/hyprland.nix
     ./home/btop.nix
     ./home/cava.nix
     ./home/fzf.nix
