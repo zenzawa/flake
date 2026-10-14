@@ -18,6 +18,7 @@
     ./home/overdose.nix
     ./home/packages.nix
     ./home/pywal.nix
+    ./home/theme.nix
     ./home/waybar.nix
     ./home/wireplumber.nix
     ./home/zsh.nix
