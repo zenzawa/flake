@@ -34,7 +34,7 @@
   # nix.settings.auto-optimise-store = true;
 
   # -------------------- LOCALIZATION --------------------------
-  time.timeZone = "Asia/Kolkata";
+  time.timeZone = "Asia/Tokyo";
   location.provider = "geoclue2";
   location.latitude = "52";
   location.longitude = "85";
