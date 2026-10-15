@@ -8,6 +8,4 @@
 
     remotePlay.openFirewall = true;
   };
-
-  programs.gamemode.enable = true;
 }
