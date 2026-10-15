@@ -1,4 +1,8 @@
+# Celluloid
+
 for celluloid import dots/celluloid.conf in preferences input configuration file
+
+# Firefox
 
 firefox colors:
 Toolbar color: #e3e3e3
@@ -15,6 +19,10 @@ popup background: #ffffff
 In Steam, open a game’s Properties → Launch Options and set:
 `nvidia-offload %command%`
 
-with mangohud and gamemode:
+with mangohud:
 
-`mangohud gamemoderun nvidia-offload %command%`
+`MANGOHUD_CONFIG=fps,gpu_name,gpu_stats mangohud nvidia-offload %command%`
+
+## toggle mangohud
+
+`Right Shift + F12`
