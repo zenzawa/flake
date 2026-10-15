@@ -1,5 +1,6 @@
 {inputs, ...}: {
   imports = [
+    inputs.degoog.nixosModules.default
     ./audio.nix
     ./bluetooth.nix
     ./bootloader.nix
@@ -45,5 +46,15 @@
     memoryPercent = 50;
     algorithm = "zstd";
     priority = 5;
+  };
+
+  # ------------------- DEGOOG -----------------------------------
+
+  services.degoog = {
+    enable = true;
+
+    environment = {
+      DEGOOG_DANGEROUSLY_NO_PASSWORD = true;
+    };
   };
 }
