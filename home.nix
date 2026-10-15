@@ -29,6 +29,7 @@
 
   home.file.".config/yt-dlp/config".source = ./dots/yt-dlp.config;
   home.file.".config/yazi/yazi.toml".source = ./dots/yazi.toml;
+  home.file.".config/rsgain/presets/replay_music.ini".source = ./dots/replay_music.ini;
 
   home.stateVersion = "26.05";
 
