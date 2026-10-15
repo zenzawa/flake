@@ -26,3 +26,8 @@ with mangohud:
 ## toggle mangohud
 
 `Right Shift + F12`
+
+## remote play
+
+Steam → Settings → Remote Play → turn on Enable Remote Play.
+Under Advanced Host Options, you can turn on hardware encoding and pick network settings.
