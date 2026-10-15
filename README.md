@@ -10,3 +10,11 @@ toolbar icons and text: #4117ee
 background tab text color: #ffffff
 search text: #4117ee
 popup background: #ffffff
+
+# Steam
+In Steam, open a game’s Properties → Launch Options and set:
+`nvidia-offload %command%`
+
+with mangohud and gamemode:
+
+`mangohud gamemoderun nvidia-offload %command%`
