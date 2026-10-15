@@ -195,7 +195,7 @@
       warper = "sudo true && sudo warp-svc & (sleep 3 && warp-cli connect) & wait";
       ama = "adb start-server &&";
       vim = "nvim";
-      replaymusic = "rsgain easy -p replay_music -S";
+      replaymusic = "rsgain easy -m MAX -p replay_music -S";
       timer = "sudo -E timeshift-gtk";
       img = "kitten icat";
       kewie = "cd ~/Music && kew \$(fzf)";
