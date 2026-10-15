@@ -9,6 +9,9 @@
 
   programs.bash = {
     enable = true;
+    shellAliases = {
+      "神様なんていないよ" = "echo There is no God.";
+    };
 
     bashrcExtra = ''
       PS1='\w ❯ '
@@ -190,7 +193,6 @@
     ];
 
     shellAliases = {
-      "神様なんていないよ" = "echo There is no God.";
       saymyname = "echo Heisenberg";
       warper = "sudo true && sudo warp-svc & (sleep 3 && warp-cli connect) & wait";
       ama = "adb start-server &&";
