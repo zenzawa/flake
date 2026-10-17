@@ -21,6 +21,7 @@ for _, cls in ipairs({
   "discord",
   ".virt-manager-wrapped",
   "org.wireshark.Wireshark",
+  "org.kde.easyeffects",
   "net.lutris.Lutris",
   "steam",
 }) do
