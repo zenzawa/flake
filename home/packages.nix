@@ -15,6 +15,7 @@
     git-lfs
     wtype
     kdePackages.dolphin
+    kdePackages.plasma-sdk
   ];
 
   utils = with pkgs; [
