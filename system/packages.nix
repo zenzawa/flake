@@ -38,7 +38,6 @@
     gdb
     docker-compose
     cmake
-    # (llama-cpp.override {cudaSupport = true;})
   ];
 
   apps = with pkgs; [
