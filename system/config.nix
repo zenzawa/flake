@@ -10,6 +10,7 @@
     ./hyprland.nix
     ./locale.nix
     ./networking.nix
+    ./ollama.nix
     ./packages.nix
     ./plasma.nix
     ./programs.nix
