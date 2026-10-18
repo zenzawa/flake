@@ -6,5 +6,6 @@
     NIXOS_OZONE_WL = "1";
     # fcitx5
     XMODIFIERS = "@im=fcitx";
+    OLLAMA_HOST= "0.0.0.0:11434";
   };
 }
