@@ -73,6 +73,8 @@
     yaak
     nasm
     nodejs
+    fnm # node version manager
+    direnv
     python3
     pnpm
     deno

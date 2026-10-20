@@ -16,6 +16,7 @@
     bashrcExtra = ''
       PS1='\w ❯ '
       fastfetch -c ~/flake/dots/OVERDOSE/fastfetch.jsonc
+      eval "$(direnv hook bash)"
 
       fd() {
         cd ~
@@ -43,6 +44,7 @@
 
     initContent = ''
             fastfetch
+            eval "$(direnv hook zsh)"
 
       # LESS SYNTAX HIGHLIGHT
             export LESSOPEN="| ${pkgs.sourceHighlight}/bin/src-hilities-lesspipe.sh %s"
