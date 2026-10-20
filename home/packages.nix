@@ -1,5 +1,6 @@
 {
   pkgs,
+  pkgs-unstable,
   ...
 }: let
   systemPackages = with pkgs; [
@@ -35,11 +36,9 @@
     brightnessctl
     pavucontrol
     steam-run-free
-    yt-dlp
     ffmpeg
     sourceHighlight
     openssl
-    proton-vpn
     lsof
     wlsunset
     gpu-screen-recorder-gtk
@@ -100,6 +99,11 @@
   #   firefox
   # ];
 
+  unstable = with pkgs-unstable; [
+    yt-dlp
+    proton-vpn
+  ];
+
 in {
-  home.packages = systemPackages ++ utils ++ apps ++ dev;
+  home.packages = systemPackages ++ utils ++ apps ++ dev ++ unstable;
 }
