@@ -10,6 +10,7 @@
   },
   "clock": {
     "format": "{:%H %M   }",
+    "timezone": "Asia/Kolkata",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "format": {
