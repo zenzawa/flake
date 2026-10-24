@@ -192,7 +192,7 @@
       replaymusic = "rsgain easy -m MAX -p replay_music -S";
       timer = "sudo -E timeshift-gtk";
       img = "kitten icat";
-      kewie = "cd ~/Music && kew \$(fzf)";
+      kewie = "cd ~/Music/Songs && kew \$(fzf)";
       celld = "celluloid \$(find . -type d |fzf)/*";
       dvim = "cd ~ && cd \$(find * -type d | fzf) && nvim .";
       dlp = ''yt-dlp -f "bv*[height<=720][vcodec^=av01]+ba/bv*[height<=720][vcodec^=vp9]+ba/bv*[height<=720][vcodec^=avc1]+ba" --cookies-from-browser brave'';
