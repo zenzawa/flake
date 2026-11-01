@@ -69,7 +69,6 @@
 
   dev = with pkgs; [
     podman-desktop
-    yaak
     nasm
     nodejs
     fnm # node version manager
