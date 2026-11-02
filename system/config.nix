@@ -34,6 +34,10 @@
 
   nix.settings.auto-optimise-store = true;
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-42.11.18"
+  ];
+
   # -------------------- LOCALIZATION --------------------------
   time.timeZone = "Asia/Tokyo";
   location.provider = "geoclue2";
