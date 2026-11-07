@@ -56,7 +56,6 @@
     galaxy-buds-client
     celluloid
     vlc
-    brave
     firefox
     telegram-desktop
     qalculate-gtk
