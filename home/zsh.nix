@@ -190,6 +190,7 @@
       ama = "adb start-server &&";
       vim = "nvim";
       replaymusic = "rsgain easy -m MAX -p replay_music -S";
+      replaymusicnoskip= "rsgain easy -m MAX -p replay_music";
       timer = "sudo -E timeshift-gtk";
       img = "kitten icat";
       kewie = "cd ~/Music/Songs && kew \$(fzf)";
