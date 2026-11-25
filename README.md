@@ -49,3 +49,15 @@ fnm use 26 >/dev/null
 
 Finally, you can `.git/info/excludeAdd` the `untrack` option to your `.envrc` file to prevent accidental commits. This cleanly resolves the node binary issue.
 
+
+# Distrobox
+
+```
+distrobox create --name barch \      
+  --image quay.io/toolbx/arch-toolbox:latest \
+  --home ~/Documents/barch \
+  --additional-flags "--device nvidia.com/gpu=all --security-opt=label=disable"
+
+
+```
+
