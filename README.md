@@ -29,7 +29,15 @@ Find Run on sites with restrictions or Access your data for all websites (depend
 
 Enable Allow access to file URLs if that option is available
 
+# Zen
+
+about:support
+about:cache
+about:config
+about:preferences
+
 # Steam
+
 In Steam, open a game’s Properties → Launch Options and set:
 `nvidia-offload %command%`
 
