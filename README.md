@@ -15,6 +15,20 @@ background tab text color: #ffffff
 search text: #4117ee
 popup background: #ffffff
 
+# Yomitan
+
+Open zen/firefox.
+
+Navigate to about:addons.
+
+Select Extensions.
+
+Click the extension you want to configure.
+
+Find Run on sites with restrictions or Access your data for all websites (depending on the extension).
+
+Enable Allow access to file URLs if that option is available
+
 # Steam
 In Steam, open a game’s Properties → Launch Options and set:
 `nvidia-offload %command%`
